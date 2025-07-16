@@ -1,0 +1,9 @@
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/KnightMovement.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/KnightMovement_autogen_timestamp_deps.dir
+C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/KnightMovement_autogen.dir

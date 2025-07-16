@@ -1,0 +1,9 @@
+# ninja log v6
+11	1003	7743606284192647	KnightMovement_autogen/timestamp	5bb47f1e8fee7581
+11	1003	7743606284192647	KnightMovement_autogen/mocs_compilation.cpp	5bb47f1e8fee7581
+11	1003	7743606284192647	C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/KnightMovement_autogen/timestamp	5bb47f1e8fee7581
+11	1003	7743606284192647	C:/Users/ilici/Desktop/GitRepos/KnightMovement/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/KnightMovement_autogen/mocs_compilation.cpp	5bb47f1e8fee7581
+1011	4474	7743606285317543	CMakeFiles/KnightMovement.dir/KnightMovement_autogen/mocs_compilation.cpp.obj	1fe2081dca538254
+1019	4553	7743606285317543	CMakeFiles/KnightMovement.dir/main.cpp.obj	dc2b21a1e0e376
+1027	4607	7743606285473798	CMakeFiles/KnightMovement.dir/mainwindow.cpp.obj	510f5bf617cb6bbf
+4608	4925	7743606321356222	KnightMovement.exe	b229c22828fda011
