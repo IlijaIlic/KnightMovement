@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QLabel>
 #include <QScreen>
+#include <QSlider>
 #include "iostream"
 #include "stdio.h"
 #include <poljacont.h>
@@ -112,9 +113,59 @@ void setUpButtons(MainWindow &w, PoljaCont *polja, int count = 6, int size = 100
     QObject::connect(resetButton, QPushButton::clicked, [&w, polja]() { polja->reset(); });
 }
 
+void setUpSlider(MainWindow &w, PoljaCont *polja, int count = 6, int size = 100)
+{
+    QSlider *slider = new QSlider(&w);
+    slider->setOrientation(Qt::Vertical);
+    slider->resize(30, 2 * size);
+    slider->move((count + 1.4) * size, ((count + 2) * size) / 2 - slider->height() / 2);
+    slider->setStyleSheet(R"(
+    QSlider::groove:vertical {
+        background: #cccccc;
+        width: 5px;
+        border-radius: 2px;
+        margin: 0px;
+    }
+
+    QSlider::handle:vertical {
+        background: #EBECD0;
+        border: none;
+        height: 20px;
+        width: 20px;
+        margin: 0px -8px;
+        border-radius: 10px;
+    }
+
+    QSlider::sub-page:vertical {
+        background: #EBECD0;
+        border-radius: 2px;
+    }
+
+    QSlider::add-page:vertical {
+        background: #EBECD0;
+        border-radius: 2px;
+    }
+
+    QSlider::handle:vertical:hover {
+        background: #989299;
+    }
+
+    QSlider::handle:vertical:pressed {
+        background: #989299;
+    }
+)");
+
+    slider->setMinimum(100);
+    slider->setMaximum(2000);
+    slider->setSingleStep(10);
+    slider->setToolTip("Brzina skakaca");
+
+    QObject::connect(slider, QSlider::valueChanged, [&w, polja](int value) { polja->delaySpeed = value; });
+    slider->show();
+}
+
 int main(int argc, char *argv[])
 {
-
     QApplication a(argc, argv);
     MainWindow w;
 
@@ -138,6 +189,7 @@ int main(int argc, char *argv[])
     polja->setUpPolja(w, brojPolja, velicinaPolja);
     setUpLabele(w, brojPolja, velicinaPolja);
     setUpButtons(w, polja, brojPolja, velicinaPolja);
+    setUpSlider(w, polja, brojPolja, velicinaPolja);
 
     return a.exec();
 }

@@ -29,6 +29,7 @@ protected:
 
 
 public:
+    int delaySpeed = 100;
     PoljaCont();
     PoljaCont(int brojPolja, int velicinaPolja);
 

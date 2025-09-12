@@ -81,7 +81,7 @@ void PoljaCont::start()
         this->matricaPolja[this->lokacija.x][this->lokacija.y]->slobodno = false;
         this->matricaPolja[this->lokacija.x][this->lokacija.y]->changeColor(true);
         this->slobodnihPolja--;
-        delay(100);
+        delay(this->delaySpeed);
 
         Lokacija pocetnaPozicija = {this->lokacija.x, this->lokacija.y};
 
@@ -143,7 +143,7 @@ void PoljaCont::start()
             this->matricaPolja[bestMove.possibleLoc.x][bestMove.possibleLoc.y]->slobodno = false;
             this->matricaPolja[bestMove.possibleLoc.x][bestMove.possibleLoc.y]->changeColor(false);
             this->slobodnihPolja--;
-            delay(100);
+            delay(this->delaySpeed);
         }
 
         // Cekirati closed-knight tour
@@ -165,7 +165,7 @@ void PoljaCont::start()
                                        this->velicinaPolja / 2
                                            - this->window->titleLabel->height() / 2);
 
-        if (file.open(QIODevice::ReadWrite)) {
+        if (file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
             QTextStream stream(&file);
             for (auto &str : stringUpis) {
                 stream << str << "\n";
