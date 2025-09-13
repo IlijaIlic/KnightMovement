@@ -69,7 +69,7 @@ void setUpLabele(MainWindow &w, int count = 6, int size = 100)
                                 "color: white;"
                                 "}");
 
-    w.titleLabel->setText("Knight Tour");
+    w.titleLabel->setText("Knight's Tour");
 
     w.titleLabel->adjustSize();
 

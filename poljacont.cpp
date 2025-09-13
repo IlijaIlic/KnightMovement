@@ -87,11 +87,11 @@ void PoljaCont::start()
 
         PossibleMove bestMove;
 
-        QString filename = "KnightTour.txt";
+        QString filename = "KnightsTour.txt";
         QFile file(filename);
 
         QVector<QString> stringUpis;
-        stringUpis.append("KnightTour Start");
+        stringUpis.append("KnightsTour Start");
 
         while (this->slobodnihPolja > 0) {
             QVector<PossibleMove> possibleMoves = checkPossibleMoves(this->lokacija.x,
@@ -148,15 +148,15 @@ void PoljaCont::start()
 
         // Cekirati closed-knight tour
         if (checkClosedKnightTour(pocetnaPozicija, bestMove)) {
-            this->window->titleLabel->setText("Closed Knight Tour");
+            this->window->titleLabel->setText("Closed Knights Tour");
             moveKnight(pocetnaPozicija.x, pocetnaPozicija.y);
             stringUpis.append(getRed(bestMove.possibleLoc.y)
                               + QString::number(bestMove.possibleLoc.x + 1) + "->"
                               + getRed(pocetnaPozicija.y) + QString::number(pocetnaPozicija.x + 1));
-            stringUpis.append("Closed Knight Tour");
+            stringUpis.append("Closed Knights Tour");
         } else {
-            this->window->titleLabel->setText("Open Knight Tour");
-            stringUpis.append("Open Knight Tour");
+            this->window->titleLabel->setText("Open Knights Tour");
+            stringUpis.append("Open Knights Tour");
         }
         this->window->titleLabel->adjustSize();
 
