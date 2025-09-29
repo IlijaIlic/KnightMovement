@@ -69,7 +69,7 @@ void PoljaCont::moveKnight(int x, int y)
 void PoljaCont::start()
 {
     if (!busy && this->slobodnihPolja != 0) {
-        this->window->titleLabel->setText("Knight Tour");
+        this->window->titleLabel->setText("Knight's Tour");
         this->window->titleLabel->adjustSize();
 
         this->window->titleLabel->move(this->window->width() / 2
@@ -148,15 +148,15 @@ void PoljaCont::start()
 
         // Cekirati closed-knight tour
         if (checkClosedKnightTour(pocetnaPozicija, bestMove)) {
-            this->window->titleLabel->setText("Closed Knights Tour");
+            this->window->titleLabel->setText("Closed Knight's Tour");
             moveKnight(pocetnaPozicija.x, pocetnaPozicija.y);
             stringUpis.append(getRed(bestMove.possibleLoc.y)
                               + QString::number(bestMove.possibleLoc.x + 1) + "->"
                               + getRed(pocetnaPozicija.y) + QString::number(pocetnaPozicija.x + 1));
-            stringUpis.append("Closed Knights Tour");
+            stringUpis.append("Closed Knight's Tour");
         } else {
-            this->window->titleLabel->setText("Open Knights Tour");
-            stringUpis.append("Open Knights Tour");
+            this->window->titleLabel->setText("Open Knight's Tour");
+            stringUpis.append("Open Knight's Tour");
         }
         this->window->titleLabel->adjustSize();
 

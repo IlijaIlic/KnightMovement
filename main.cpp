@@ -4,8 +4,6 @@
 #include <QLabel>
 #include <QScreen>
 #include <QSlider>
-#include "iostream"
-#include "stdio.h"
 #include <poljacont.h>
 
 void setUpWindow(MainWindow &w, int count = 6, int size = 100)
@@ -91,6 +89,7 @@ void setUpButtons(MainWindow &w, PoljaCont *polja, int count = 6, int size = 100
                                " background-color: #EBECD0; "
                                "font-family: 'Cascadia Mono';"
                                "font-size: 25px;"
+                               "color : black;"
 
                                "}");
 
@@ -107,6 +106,7 @@ void setUpButtons(MainWindow &w, PoljaCont *polja, int count = 6, int size = 100
                                " background-color: #EBECD0; "
                                "font-family: 'Cascadia Mono';"
                                "font-size: 25px;"
+                               "color : black;"
 
                                "}");
 
@@ -174,7 +174,7 @@ int main(int argc, char *argv[])
 
     switch (brojPolja) {
     case 6:
-        velicinaPolja = 100;
+        velicinaPolja = 75;
         break;
     case 8:
         velicinaPolja = 75;
@@ -182,6 +182,7 @@ int main(int argc, char *argv[])
     default:
         velicinaPolja = 100;
         break;
+
     }
     PoljaCont *polja = new PoljaCont(brojPolja, velicinaPolja);
 

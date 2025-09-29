@@ -14,6 +14,7 @@ Polje::Polje(QWidget *parent, int color)
                       " background-color: #779556; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     } else {
@@ -22,6 +23,7 @@ Polje::Polje(QWidget *parent, int color)
                       " background-color: #EBECD0; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     }
@@ -35,6 +37,7 @@ void Polje::enterEvent(QEnterEvent *event)
                       " background-color: #989299; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
 
@@ -51,6 +54,7 @@ void Polje::leaveEvent(QEvent *event)
                           " background-color: #779556; "
                           "font-family: 'Cascadia Mono';"
                           "font-size: 50px;"
+                          "color : black;"
 
                           "}");
         } else {
@@ -59,6 +63,7 @@ void Polje::leaveEvent(QEvent *event)
                           " background-color: #EBECD0; "
                           "font-family: 'Cascadia Mono';"
                           "font-size: 50px;"
+                          "color : black;"
 
                           "}");
         }
@@ -74,6 +79,7 @@ void Polje::changeColor(bool start)
                       " background-color: #e5ae22; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     } else {
@@ -82,6 +88,7 @@ void Polje::changeColor(bool start)
                       " background-color: #D28846; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     }
@@ -97,6 +104,7 @@ void Polje::resetPolje()
                       " background-color: #779556; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     } else {
@@ -105,6 +113,7 @@ void Polje::resetPolje()
                       " background-color: #EBECD0; "
                       "font-family: 'Cascadia Mono';"
                       "font-size: 50px;"
+                      "color : black;"
 
                       "}");
     }
